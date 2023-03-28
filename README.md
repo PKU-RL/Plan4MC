@@ -1,6 +1,9 @@
 # Plan4MC: Skill Reinforcement Learning and Planning for Open-World Minecraft Tasks
 <div align="center">
-[[Website]](https://sites.google.com/view/plan4mc) [[Arxiv Paper]](xxx)
+
+[[Website]](https://sites.google.com/view/plan4mc) 
+[[Arxiv Paper]](xxx)
+
 ![](figs/plan4mc.png)
 </div>
 
@@ -29,9 +32,9 @@ task_name = 'harvest_mutton_with_diamond_sword'
 task_conf = utils.get_yaml_data('envs/hard_task_conf.yaml')[task_name]
 init_items = {}
 if 'initial_inventory' in task_conf:
-	init_items = task_conf['initial_inventory']
-	init_inv = [InventoryItem(slot=i, name=k, variant=None, quantity=task_conf['initial_inventory'][k]) for i,k in enumerate(list(task_conf['initial_inventory'].keys()))]
-	task_conf['initial_inventory'] = init_inv
+    init_items = task_conf['initial_inventory']
+    init_inv = [InventoryItem(slot=i, name=k, variant=None, quantity=task_conf['initial_inventory'][k]) for i,k in enumerate(list(task_conf['initial_inventory'].keys()))]
+    task_conf['initial_inventory'] = init_inv
 env = MinecraftHardHarvestEnv(image_size=(160,256), **task_conf)
 ```
 
