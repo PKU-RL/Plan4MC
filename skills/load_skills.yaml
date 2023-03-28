@@ -1,0 +1,59 @@
+
+# skill 0: find something
+find:
+  skill_type: 0
+  model_path: skills/models/find_high.pth
+  max_steps_high: 20
+  max_steps_low: 50
+
+
+# skill 1: use/place/attack something
+crafting_table_nearby:
+  skill_type: 1
+  model_path: skills/models/place.pth
+  max_steps: 200
+
+furnace_nearby:
+  skill_type: 1
+  model_path: skills/models/place.pth
+  max_steps: 200
+
+milk_bucket:
+  skill_type: 1
+  model_path: skills/models/milk_bucket.pth
+  max_steps: 200
+
+wool:
+  skill_type: 1
+  model_path: skills/models/wool.pth
+  max_steps: 200
+
+log:
+  skill_type: 1
+  model_path: skills/models/log.pth
+  max_steps: 500
+
+cobblestone:
+  skill_type: 1
+  model_path: skills/models/cobblestone.pth
+  max_steps: 200
+
+beef:
+  skill_type: 1
+  model_path: skills/models/combat_cow.pth
+  max_steps: 400
+
+leather:
+  skill_type: 1
+  model_path: skills/models/combat_cow.pth
+  max_steps: 400
+
+mutton:
+  skill_type: 1
+  model_path: skills/models/combat_sheep.pth
+  max_steps: 400
+
+
+# skill 2: craft
+craft:
+  skill_type: 2

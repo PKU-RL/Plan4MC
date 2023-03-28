@@ -1,0 +1,220 @@
+# configs for hard tasks env
+
+########## log-based tasks
+craft_stick:
+  biome: "plains"
+  target_name: "stick"
+  target_quantity: 1
+  max_steps: 3000
+
+get_crafting_table_nearby:
+  biome: "plains"
+  target_name: "crafting_table_nearby"
+  target_quantity: 1
+  max_steps: 3000
+
+craft_bowl:
+  biome: "forest"
+  target_name: "bowl"
+  target_quantity: 1
+  max_steps: 3000
+
+craft_chest:
+  biome: "forest"
+  target_name: "chest"
+  target_quantity: 1
+  max_steps: 3000
+
+craft_trapdoor:
+  biome: "forest"
+  target_name: "trapdoor"
+  target_quantity: 1
+  max_steps: 3000
+
+craft_sign:
+  biome: "forest"
+  target_name: "sign"
+  target_quantity: 1
+  max_steps: 3000
+
+craft_wooden_pickaxe:
+  biome: "forest"
+  target_name: "wooden_pickaxe"
+  target_quantity: 1
+  max_steps: 3000
+
+
+########### stone-based tasks
+get_furnace_nearby_with_logs:
+  biome: "extreme_hills"
+  target_name: "furnace_nearby"
+  target_quantity: 1
+  initial_inventory:
+    log: 10
+  max_steps: 5000
+
+craft_stone_stairs_with_logs:
+  biome: "extreme_hills"
+  target_name: "stone_stairs"
+  target_quantity: 1
+  initial_inventory:
+    log: 10
+  max_steps: 5000
+
+craft_stone_slab_with_logs:
+  biome: "extreme_hills"
+  target_name: "stone_slab"
+  target_quantity: 1
+  initial_inventory:
+    log: 10
+  max_steps: 3000
+
+craft_cobblestone_wall_with_logs:
+  biome: "extreme_hills"
+  target_name: "cobblestone_wall"
+  target_quantity: 1
+  initial_inventory:
+    log: 10
+  max_steps: 5000
+
+craft_torch_with_logs:
+  biome: "extreme_hills"
+  target_name: "torch"
+  target_quantity: 1
+  initial_inventory:
+    log: 10
+  max_steps: 5000
+
+craft_lever_with_wooden_pickaxe:
+  biome: "forest_hills"
+  target_name: "lever"
+  target_quantity: 1
+  initial_inventory:
+    wooden_pickaxe: 1
+  max_steps: 5000
+
+craft_stone_pickaxe_with_wooden_pickaxe:
+  biome: "forest_hills"
+  target_name: "stone_pickaxe"
+  target_quantity: 1
+  initial_inventory:
+    wooden_pickaxe: 1
+  max_steps: 10000
+
+########### mob-based tasks
+harvest_milk_with_crafting_table_and_iron_ingot:
+  biome: "plains"
+  target_name: "milk_bucket"
+  target_quantity: 1
+  initial_inventory:
+    crafting_table: 1
+    iron_ingot: 3
+  initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
+  initial_mob_spawn_range_low: [-30, 1, -30]
+  initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 3000
+
+harvest_wool_with_crafting_table_and_iron_ingot:
+  biome: "plains"
+  target_name: "wool"
+  target_quantity: 1
+  initial_inventory:
+    crafting_table: 1
+    iron_ingot: 2
+  initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
+  initial_mob_spawn_range_low: [-30, 1, -30]
+  initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 3000
+
+craft_bed_with_crafting_table_and_shears:
+  biome: "plains"
+  target_name: "bed"
+  target_quantity: 1
+  initial_inventory:
+    crafting_table: 1
+    shears: 1
+  initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
+  initial_mob_spawn_range_low: [-30, 1, -30]
+  initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 10000
+
+craft_painting_with_crafting_table_and_shears:
+  biome: "plains"
+  target_name: "painting"
+  target_quantity: 1
+  initial_inventory:
+    crafting_table: 1
+    shears: 1
+  initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
+  initial_mob_spawn_range_low: [-30, 1, -30]
+  initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 10000
+
+craft_carpet_with_shears:
+  biome: "plains"
+  target_name: "carpet"
+  target_quantity: 1
+  initial_inventory:
+    shears: 1
+  initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
+  initial_mob_spawn_range_low: [-30, 1, -30]
+  initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 3000
+
+craft_item_frame_with_crafting_table_and_diamond_sword:
+  biome: "plains"
+  target_name: "item_frame"
+  target_quantity: 1
+  initial_inventory:
+    crafting_table: 1
+    diamond_sword: 1
+  initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
+  initial_mob_spawn_range_low: [-30, 1, -30]
+  initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 10000
+
+harvest_beef_with_diamond_sword:
+  biome: "plains"
+  target_name: "beef"
+  target_quantity: 1
+  initial_inventory:
+    diamond_sword: 1
+  initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
+  initial_mob_spawn_range_low: [-30, 1, -30]
+  initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 3000
+
+harvest_cooked_beef_with_furnace_and_diamond_sword:
+  biome: "plains"
+  target_name: "cooked_beef"
+  target_quantity: 1
+  initial_inventory:
+    furnace: 1
+    diamond_sword: 1
+  initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
+  initial_mob_spawn_range_low: [-30, 1, -30]
+  initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 10000
+
+harvest_mutton_with_diamond_sword:
+  biome: "plains"
+  target_name: "mutton"
+  target_quantity: 1
+  initial_inventory:
+    diamond_sword: 1
+  initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
+  initial_mob_spawn_range_low: [-30, 1, -30]
+  initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 3000
+
+harvest_cooked_mutton_with_furnace_and_diamond_sword:
+  biome: "plains"
+  target_name: "cooked_mutton"
+  target_quantity: 1
+  initial_inventory:
+    furnace: 1
+    diamond_sword: 1
+  initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
+  initial_mob_spawn_range_low: [-30, 1, -30]
+  initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 10000

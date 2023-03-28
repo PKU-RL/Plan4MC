@@ -1,0 +1,379 @@
+# skill_type: 3 different types of skills
+# consume: things required and will be consumed. In addition, doing skill-0 will lose all the _nearby things.
+# require: things required in the inventory, but will not be consumed
+# equip: things required and should be equipped at hand
+# obtain: 
+
+# skill 0: find something
+cow_nearby:
+  skill_type: 0
+  consume: 
+  require: 
+  equip: []
+  obtain: 
+    'cow_nearby': 1
+
+sheep_nearby:
+  skill_type: 0
+  consume: 
+  require: 
+  equip: []
+  obtain: 
+    'sheep_nearby': 1
+
+log_nearby:
+  skill_type: 0
+  consume: 
+  require: 
+  equip: []
+  obtain: 
+    'log_nearby': 1
+
+cobblestone_nearby:
+  skill_type: 0
+  consume: 
+  require: 
+  equip: []
+  obtain: 
+    'cobblestone_nearby': 1
+
+
+# skill 1: use/place/attack something
+crafting_table_nearby:
+  skill_type: 1
+  consume: 
+    'crafting_table': 1
+  require: 
+  equip: ['crafting_table']
+  obtain: 
+    'crafting_table_nearby': 1
+
+furnace_nearby:
+  skill_type: 1
+  consume: 
+    'furnace': 1
+  require: 
+  equip: ['furnace']
+  obtain: 
+    'furnace_nearby': 1
+
+milk_bucket:
+  skill_type: 1
+  consume: 
+    'bucket': 1
+  require: 
+    'cow_nearby': 1
+  equip: ['bucket']
+  obtain: 
+    'milk_bucket': 1
+
+wool:
+  skill_type: 1
+  consume: 
+    'sheep_nearby': 1
+  require: 
+    'shears': 1
+  equip: ['shears']
+  obtain: 
+    'wool': 1
+
+log:
+  skill_type: 1
+  consume: 
+    'log_nearby': 1
+  require:
+  equip: []
+  obtain: 
+    'log': 1
+
+cobblestone:
+  skill_type: 1
+  consume: 
+    'cobblestone_nearby': 1
+  require:
+    'wooden_pickaxe': 1
+  equip: ['wooden_pickaxe']
+  obtain: 
+    'cobblestone': 1
+
+beef:
+  skill_type: 1
+  consume: 
+    'cow_nearby': 1
+  require: 
+    'diamond_sword': 1
+  equip: ['diamond_sword']
+  obtain: 
+    'beef': 1
+    'leather': 1
+
+leather:
+  skill_type: 1
+  consume: 
+    'cow_nearby': 1
+  require: 
+    'diamond_sword': 1
+  equip: ['diamond_sword']
+  obtain: 
+    'beef': 1
+    'leather': 1
+
+mutton:
+  skill_type: 1
+  consume: 
+    'sheep_nearby': 1
+  require: 
+    'diamond_sword': 1
+  equip: ['diamond_sword']
+  obtain: 
+    'mutton': 1
+
+
+# skill 2: craft
+######## log-based items
+planks:
+  skill_type: 2
+  consume: 
+    'log': 1
+  require:
+  equip: []
+  obtain: 
+    'planks': 4
+
+stick:
+  skill_type: 2
+  consume: 
+    'planks': 2
+  require:
+  equip: []
+  obtain: 
+    'stick': 4
+
+bowl:
+  skill_type: 2
+  consume: 
+    'planks': 3
+  require:
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'bowl': 4
+
+chest:
+  skill_type: 2
+  consume: 
+    'planks': 8
+  require:
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'chest': 1
+
+trapdoor:
+  skill_type: 2
+  consume: 
+    'planks': 6
+  require:
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'trapdoor': 1
+
+sign:
+  skill_type: 2
+  consume: 
+    'planks': 6
+    'stick': 1
+  require:
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'sign': 3
+
+wooden_pickaxe:
+  skill_type: 2
+  consume:
+    'planks': 3
+    'stick': 2
+  require:
+    'crafting_table_nearby': 1
+  equip: []
+  obtain:
+    'wooden_pickaxe': 1
+
+crafting_table:
+  skill_type: 2
+  consume: 
+    'planks': 4
+  require: 
+  equip: []
+  obtain: 
+    'crafting_table': 1
+
+####### stone-based items
+furnace:
+  skill_type: 2
+  consume: 
+    'cobblestone': 8
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'furnace': 1
+
+stone_stairs:
+  skill_type: 2
+  consume: 
+    'cobblestone': 6
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'stone_stairs': 4
+
+stone_slab:
+  skill_type: 2
+  consume: 
+    'cobblestone': 3
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'stone_slab': 6
+
+cobblestone_wall:
+  skill_type: 2
+  consume: 
+    'cobblestone': 6
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'cobblestone_wall': 6
+
+lever:
+  skill_type: 2
+  consume: 
+    'cobblestone': 1
+    'stick': 1
+  require: 
+  equip: []
+  obtain: 
+    'lever': 1
+
+stone_pickaxe:
+  skill_type: 2
+  consume: 
+    'cobblestone': 3
+    'stick': 2
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'stone_pickaxe': 1
+
+coal:
+  skill_type: 2
+  consume:
+    'log': 2
+  require:
+    'furnace_nearby': 1
+  equip: []
+  obtain:
+    'coal': 1
+
+torch:
+  skill_type: 2
+  consume:
+    'coal': 1
+    'stick': 1
+  require:
+  equip: []
+  obtain:
+    'torch': 4
+
+####### iron-based items
+shears:
+  skill_type: 2
+  consume: 
+    'iron_ingot': 2
+  require:
+  equip: []
+  obtain: 
+    'shears': 1
+
+bucket:
+  skill_type: 2
+  consume: 
+    'iron_ingot': 3
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'bucket': 1
+
+
+####### animal-based items
+bed:
+  skill_type: 2
+  consume: 
+    'planks': 3 
+    'wool': 3
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'bed': 1
+
+painting:
+  skill_type: 2
+  consume: 
+    'stick': 8 
+    'wool': 1
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'painting': 1
+
+carpet:
+  skill_type: 2
+  consume:  
+    'wool': 2
+  require: 
+  equip: []
+  obtain: 
+    'carpet': 3
+
+item_frame:
+  skill_type: 2
+  consume: 
+    'stick': 8 
+    'leather': 1
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'item_frame': 1
+
+cooked_beef:
+  skill_type: 2
+  consume:
+    'planks': 1
+    'beef': 1
+  require:
+    'furnace_nearby': 1
+  equip: []
+  obtain:
+    'cooked_beef': 1
+
+cooked_mutton:
+  skill_type: 2
+  consume:
+    'planks': 1
+    'mutton': 1
+  require:
+    'furnace_nearby': 1
+  equip: []
+  obtain:
+    'cooked_mutton': 1

@@ -1,0 +1,27 @@
+image_config:
+  resolution : 224
+  patch_size : 16
+  width : 768
+  layers : 12
+  heads : 12
+  output_dim : 512
+
+text_config:
+  embed_dim : 512
+  context_length : 77
+  vocab_size : 49408
+  layers : 12
+  width : 512
+  heads : 8
+
+temporal_config:
+  input_dim : 512
+  embed_dim : 512
+  depth : 2
+  num_heads : 8
+  video_seq_len : 32
+
+adaptor_config:
+  video_layers : 2
+  text_layers : 0
+  feature_dim : 512
