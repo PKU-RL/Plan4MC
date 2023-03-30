@@ -6,6 +6,7 @@
 
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/MineDojo)](https://pypi.org/project/MineDojo/)
 [<img src="https://img.shields.io/badge/Framework-PyTorch-red.svg"/>](https://pytorch.org/)
+[![GitHub license](https://img.shields.io/github/license/MineDojo/MineCLIP)](https://github.com/PKU-RL/Plan4MC/blob/main/LICENSE)
 ______________________________________________________________________
 ![](figs/plan4mc.png)
 </div>
