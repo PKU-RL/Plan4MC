@@ -19,7 +19,7 @@ Plan4MC is a multi-task agent in Minecraft, solving long-term tasks via planning
 
 - Upgrade the MineDojo package: 
 	- Delete the original package `pip uninstall minedojo`.
-	- Download our [forked MineDojo repository](https://github.com/YHQpkueecs/MineDojo). Run `python setup.py install`.
+	- Download our [modified MineDojo](https://github.com/PKU-RL/MCEnv). Run `python setup.py install`.
 	- To this end, you can successfully run `validate_install.py` [here](https://github.com/MineDojo/MineDojo/tree/main/scripts).
 
 - Install python packages in `requirements.txt`. Note that we require PyTorch>=1.8.1 and x-transformers==0.27.1.
