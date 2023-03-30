@@ -2,8 +2,11 @@
 <div align="center">
 
 [[Website]](https://sites.google.com/view/plan4mc) 
-[[Arxiv Paper]](xxx)
+[[Arxiv Paper]](https://arxiv.org/abs/2303.16563)
 
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/MineDojo)](https://pypi.org/project/MineDojo/)
+[<img src="https://img.shields.io/badge/Framework-PyTorch-red.svg"/>](https://pytorch.org/)
+______________________________________________________________________
 ![](figs/plan4mc.png)
 </div>
 
@@ -55,6 +58,11 @@ env = MinecraftHardHarvestEnv(image_size=(160,256), **task_conf)
 
 ## Citation
 ```bibtex
-xxxx
+@article{yuan2023plan4mc,
+      title={{Plan4MC}: Skill Reinforcement Learning and Planning for Open-World {Minecraft} Tasks}, 
+      author={Yuan, Haoqi and Zhang, Chi and Wang, Hongcheng and Xie, Feiyang and Cai, Penglin and Dong, Hao and Lu, Zongqing},
+      journal={arXiv preprint arXiv:2303.16563},
+      year={2023},
+}
 ```
 
