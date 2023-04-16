@@ -24,7 +24,7 @@ Plan4MC is a multi-task agent in Minecraft, solving long-term tasks via planning
 
 - Install python packages in `requirements.txt`. Note that we require PyTorch>=1.8.1 and x-transformers==0.27.1.
 
-- Download the [pretrained MineCLIP model](https://drive.google.com/file/d/1uaZM1ZLBz2dZWcn85rZmjP7LV6Sg5PZW/view?usp=sharing) named `attn.pth`.  Move the file to `mineclip_official/`.
+- Download the [pretrained MineCLIP model](https://disk.pku.edu.cn:443/link/86843F120DF784DCC117624D2E90A569) named `attn.pth`.  Move the file to `mineclip_official/`.
 
 ## Tasks
 - We provide 24 diverse tasks configured in `envs/hard_task_conf.yaml`.  To create an environment for a task:
