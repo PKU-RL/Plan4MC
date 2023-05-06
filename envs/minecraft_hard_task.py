@@ -184,6 +184,7 @@ class MinecraftHardHarvestEnv:
 
         if self.save_rgb:
             self.rgb_list = [np.transpose(obs['rgb'], [1,2,0]).astype(np.uint8)]
+            self.action_list = []
         self.obs = obs
         self.last_obs = obs
         return obs
@@ -216,6 +217,7 @@ class MinecraftHardHarvestEnv:
         self.obs = obs
         if self.save_rgb:
             self.rgb_list.append(np.transpose(obs['rgb'], [1,2,0]).astype(np.uint8))
+            self.action_list.append(np.asarray(act))
         return  obs, reward, done, info
 
     # for Find skill: detect target items
