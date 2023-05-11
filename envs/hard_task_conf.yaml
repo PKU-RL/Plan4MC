@@ -44,6 +44,25 @@ craft_wooden_pickaxe:
   max_steps: 3000
 
 
+craft_wooden_axe:
+  biome: "forest"
+  target_name: "wooden_axe"
+  target_quantity: 1
+  max_steps: 3000
+
+craft_wooden_sword:
+  biome: "forest"
+  target_name: "wooden_sword"
+  target_quantity: 1
+  max_steps: 3000
+
+craft_wooden_shovel:
+  biome: "forest"
+  target_name: "wooden_shovel"
+  target_quantity: 1
+  max_steps: 3000
+
+
 ########### stone-based tasks
 get_furnace_nearby_with_logs:
   biome: "extreme_hills"
@@ -100,6 +119,31 @@ craft_stone_pickaxe_with_wooden_pickaxe:
   initial_inventory:
     wooden_pickaxe: 1
   max_steps: 10000
+
+craft_stone_sword_with_wooden_pickaxe:
+  biome: "forest_hills"
+  target_name: "stone_sword"
+  target_quantity: 1
+  initial_inventory:
+    wooden_pickaxe: 1
+  max_steps: 10000
+
+craft_stone_pressure_plate_with_logs:
+  biome: "extreme_hills"
+  target_name: "stone_pressure_plate"
+  target_quantity: 1
+  initial_inventory:
+    log: 10
+  max_steps: 3000
+
+craft_stone_button_with_logs:
+  biome: "extreme_hills"
+  target_name: "stone_button"
+  target_quantity: 1
+  initial_inventory:
+    log: 10
+  max_steps: 3000
+
 
 ########### mob-based tasks
 harvest_milk_with_crafting_table_and_iron_ingot:
@@ -217,4 +261,87 @@ harvest_cooked_mutton_with_furnace_and_diamond_sword:
   initial_mobs: ["cow","cow","cow","sheep","sheep","sheep"]
   initial_mob_spawn_range_low: [-30, 1, -30]
   initial_mob_spawn_range_high: [30, 1, 30]
+  max_steps: 10000
+
+
+
+############ iron-based tasks
+craft_iron_ingot_with_stone_pickaxe:
+  biome: "forest"
+  target_name: "iron_ingot"
+  target_quantity: 1
+  initial_inventory:
+    stone_pickaxe: 1
+  max_steps: 3000
+
+craft_shears_with_stone_pickaxe:
+  biome: "forest"
+  target_name: "shears"
+  target_quantity: 1
+  initial_inventory:
+    stone_pickaxe: 1
+  max_steps: 5000
+
+craft_bucket_with_stone_pickaxe:
+  biome: "forest"
+  target_name: "bucket"
+  target_quantity: 1
+  initial_inventory:
+    stone_pickaxe: 1
+  max_steps: 5000
+
+craft_iron_pickaxe_with_stone_pickaxe:
+  biome: "forest"
+  target_name: "iron_pickaxe"
+  target_quantity: 1
+  initial_inventory:
+    stone_pickaxe: 1
+  max_steps: 8000
+
+craft_iron_sword_with_stone_pickaxe:
+  biome: "forest"
+  target_name: "iron_sword"
+  target_quantity: 1
+  initial_inventory:
+    stone_pickaxe: 1
+  max_steps: 8000
+
+craft_tripwire_hook_with_stone_pickaxe:
+  biome: "forest"
+  target_name: "tripwire_hook"
+  target_quantity: 1
+  initial_inventory:
+    stone_pickaxe: 1
+  max_steps: 5000
+
+craft_heavy_weighted_pressure_plate_with_stone_pickaxe:
+  biome: "forest"
+  target_name: "heavy_weighted_pressure_plate"
+  target_quantity: 1
+  initial_inventory:
+    stone_pickaxe: 1
+  max_steps: 5000
+
+craft_minecart_with_stone_pickaxe:
+  biome: "forest"
+  target_name: "minecart"
+  target_quantity: 1
+  initial_inventory:
+    stone_pickaxe: 1
+  max_steps: 10000
+
+craft_hopper_with_stone_pickaxe:
+  biome: "forest"
+  target_name: "hopper"
+  target_quantity: 1
+  initial_inventory:
+    stone_pickaxe: 1
+  max_steps: 10000
+
+harvest_diamond_with_stone_pickaxe:
+  biome: "forest"
+  target_name: "diamond"
+  target_quantity: 1
+  initial_inventory:
+    stone_pickaxe: 1
   max_steps: 10000

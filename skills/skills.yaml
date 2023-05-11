@@ -201,6 +201,39 @@ wooden_pickaxe:
   obtain:
     'wooden_pickaxe': 1
 
+wooden_axe:
+  skill_type: 2
+  consume:
+    'planks': 3
+    'stick': 2
+  require:
+    'crafting_table_nearby': 1
+  equip: []
+  obtain:
+    'wooden_axe': 1
+
+wooden_sword:
+  skill_type: 2
+  consume:
+    'planks': 2
+    'stick': 1
+  require:
+    'crafting_table_nearby': 1
+  equip: []
+  obtain:
+    'wooden_sword': 1
+
+wooden_shovel:
+  skill_type: 2
+  consume:
+    'planks': 1
+    'stick': 2
+  require:
+    'crafting_table_nearby': 1
+  equip: []
+  obtain:
+    'wooden_shovel': 1
+
 crafting_table:
   skill_type: 2
   consume: 
@@ -271,6 +304,35 @@ stone_pickaxe:
   equip: []
   obtain: 
     'stone_pickaxe': 1
+
+stone_sword:
+  skill_type: 2
+  consume: 
+    'cobblestone': 2
+    'stick': 1
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'stone_sword': 1
+
+stone_pressure_plate:
+  skill_type: 2
+  consume: 
+    'cobblestone': 2
+  require: 
+  equip: []
+  obtain: 
+    'stone_pressure_plate': 1
+
+stone_button:
+  skill_type: 2
+  consume: 
+    'cobblestone': 1
+  require: 
+  equip: []
+  obtain: 
+    'stone_button': 1
 
 coal:
   skill_type: 2
@@ -377,3 +439,118 @@ cooked_mutton:
   equip: []
   obtain:
     'cooked_mutton': 1
+
+
+## mine iron
+iron_ore:
+  skill_type: 1
+  consume: 
+  require:
+    'stone_pickaxe': 1
+  equip: ['stone_pickaxe']
+  obtain: 
+    'iron_ore': 1
+
+diamond:
+  skill_type: 1
+  consume: 
+  require:
+    'iron_pickaxe': 1
+  equip: ['iron_pickaxe']
+  obtain: 
+    'diamond': 1
+
+####### iron-based items
+iron_ingot:
+  skill_type: 2
+  consume:
+    'iron_ore': 1
+    'coal': 1
+  require:
+    'furnace_nearby': 1
+  equip: []
+  obtain:
+    'iron_ingot': 1
+
+bucket:
+  skill_type: 2
+  consume: 
+    'iron_ingot': 3
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'bucket': 1
+
+shears:
+  skill_type: 2
+  consume: 
+    'iron_ingot': 2
+  require: 
+  equip: []
+  obtain: 
+    'shears': 1
+
+iron_pickaxe:
+  skill_type: 2
+  consume: 
+    'stick': 2
+    'iron_ingot': 3
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'iron_pickaxe': 1
+
+iron_sword:
+  skill_type: 2
+  consume: 
+    'stick': 1
+    'iron_ingot': 2
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'iron_sword': 1
+
+tripwire_hook:
+  skill_type: 2
+  consume: 
+    'stick': 1
+    'planks': 1
+    'iron_ingot': 1
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'tripwire_hook': 2
+
+heavy_weighted_pressure_plate:
+  skill_type: 2
+  consume: 
+    'iron_ingot': 2
+  require: 
+  equip: []
+  obtain: 
+    'heavy_weighted_pressure_plate': 1
+
+minecart:
+  skill_type: 2
+  consume: 
+    'iron_ingot': 5
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'minecart': 1
+
+hopper:
+  skill_type: 2
+  consume: 
+    'chest': 1
+    'iron_ingot': 5
+  require: 
+    'crafting_table_nearby': 1
+  equip: []
+  obtain: 
+    'hopper': 1
