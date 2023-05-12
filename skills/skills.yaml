@@ -316,10 +316,21 @@ stone_sword:
   obtain: 
     'stone_sword': 1
 
+stone:
+  skill_type: 2
+  consume:
+    'planks': 1
+    'cobblestone': 1
+  require:
+    'furnace_nearby': 1
+  equip: []
+  obtain:
+    'stone': 1
+
 stone_pressure_plate:
   skill_type: 2
   consume: 
-    'cobblestone': 2
+    'stone': 2
   require: 
   equip: []
   obtain: 
@@ -328,7 +339,7 @@ stone_pressure_plate:
 stone_button:
   skill_type: 2
   consume: 
-    'cobblestone': 1
+    'stone': 1
   require: 
   equip: []
   obtain: 

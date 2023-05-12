@@ -128,13 +128,13 @@ craft_stone_sword_with_wooden_pickaxe:
     wooden_pickaxe: 1
   max_steps: 10000
 
-craft_stone_pressure_plate_with_logs:
+craft_stone_with_logs:
   biome: "extreme_hills"
-  target_name: "stone_pressure_plate"
+  target_name: "stone"
   target_quantity: 1
   initial_inventory:
     log: 10
-  max_steps: 3000
+  max_steps: 5000
 
 craft_stone_button_with_logs:
   biome: "extreme_hills"
@@ -142,7 +142,7 @@ craft_stone_button_with_logs:
   target_quantity: 1
   initial_inventory:
     log: 10
-  max_steps: 3000
+  max_steps: 5000
 
 
 ########### mob-based tasks
