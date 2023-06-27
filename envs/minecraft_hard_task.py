@@ -103,8 +103,19 @@ SUBGOAL_DISTANCE=10
 # environment for hard harvest tasks
 # support 3 types of skills
 class MinecraftHardHarvestEnv:
-    def __init__(self, image_size=(160, 256), seed=0, biome='plains', clip_model=None, device=None, 
-        target_name='log', target_quantity=1, save_rgb=False, max_steps=3000, **kwargs):
+    def __init__(self,
+                 image_size=(160, 256),
+                 seed=0,
+                 biome='plains',
+                 clip_model=None,
+                 device=None, 
+                 target_name='log',
+                 target_quantity=1,
+                 save_rgb=False,
+                 max_steps=3000,
+                 all_snapshots=False,
+                 **kwargs):
+        
         self.observation_size = (3, *image_size)
         self.action_size = 8
         self.biome = biome
@@ -121,6 +132,10 @@ class MinecraftHardHarvestEnv:
         self.clip_model = clip_model # use mineclip model to precompute embeddings
         self.device = device
         self.save_rgb = save_rgb
+        self.all_snapshots = all_snapshots
+
+        if all_snapshots:
+            self.all_snaps_cache = []
 
     def __del__(self):
         if hasattr(self, 'base_env'):
@@ -218,7 +233,11 @@ class MinecraftHardHarvestEnv:
         if self.save_rgb:
             self.rgb_list.append(np.transpose(obs['rgb'], [1,2,0]).astype(np.uint8))
             self.action_list.append(np.asarray(act))
-        return  obs, reward, done, info
+
+        if self.all_snapshots:
+            self.all_snaps_cache.append(np.transpose(obs['rgb'], [1,2,0]).astype(np.uint8))
+                
+        return obs, reward, done, info
 
     # for Find skill: detect target items
     def target_in_sight(self, obs, target, max_dis=20):

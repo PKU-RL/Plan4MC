@@ -68,6 +68,7 @@ def main(args):
         clip_model=model_clip,
         device=device,
         save_rgb=args.save_gif,
+        all_snapshots=args.all_snapshots,
         **task_conf
         )
 
@@ -162,6 +163,12 @@ def main(args):
             os.mkdir(save_dir_snapshots)
         for i, (sk, im) in enumerate(episode_snapshots):
             imageio.imsave(os.path.join(save_dir_snapshots, '{}_{}.png'.format(i,sk)), im)
+
+        if args.all_snapshots:
+            for i, im in enumerate(env.all_snaps_cache):
+                imageio.imsave(os.path.join(save_dir_snapshots, 'snap_{}.png'.format(i)), im)
+            env.all_snaps_cache = []
+            
         print()
 
     # draw skill success figure
@@ -194,5 +201,6 @@ if __name__ == "__main__":
     parser.add_argument('--clip-model-path', type=str, default='mineclip_official/attn.pth')
     parser.add_argument('--task-config-path', type=str, default='envs/hard_task_conf.yaml')
     parser.add_argument('--skills-model-config-path', type=str, default='skills/load_skills.yaml')
+    parser.add_argument('--all-snapshots', type=int, default=0)
     args = parser.parse_args()
     main(args)
